@@ -1,0 +1,305 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Andre andre--srl@hotmail.com, -, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\andre\Desktop\PROJETO ELTD03\Projeto.uvprojx
+Project File Date:  07/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+4 warnings generated.
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(39): warning: // comments are not allowed in this language [-Wcomment]
+/// GPIO Pin identifier
+^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(173): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern void GPIO_PortClock (GPIO_TypeDef *GPIOx, bool enable);
+                                                 ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(182): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern bool GPIO_GetPortClockState (GPIO_TypeDef *GPIOx);
+       ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(197): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_PinConfigure(GPIO_TypeDef      *GPIOx,
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(246): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return (GPIOx->IDR);
+  ~~~~~~  ~~~~~~~^~~
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(47): warning: // comments are not allowed in this language [-Wcomment]
+#define AFIO_MAPR_SWJ_CFG_VAL   (AFIO_SWJ_FULL)    // Full SWJ (JTAG-DP + SW-DP)
+                                                   ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(56): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+void GPIO_PortClock (GPIO_TypeDef *GPIOx, bool enable) {
+                                          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(84): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_GetPortClockState (GPIO_TypeDef *GPIOx) {
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(111): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_PinConfigure(GPIO_TypeDef *GPIOx, uint32_t num, GPIO_CONF conf,
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(128): warning: integer constant not in range of enumerated type 'GPIO_CONF' [-Wassign-enum]
+      conf &= ~1;
+              ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(140): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg &= ~(0xF << (num << 2));
+       ~~ ^~~~~~~~~~~~~~~~~~~~
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(141): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg |= ((conf << 2) | mode) << (num << 2);
+       ~~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+15 warnings generated.
+compiling GPIO_STM32F10x.c...
+projetinho_tecladinho.c(1): warning: In file included from...
+./lcd_controller.h(1): warning: In file included from...
+./general_controller.h(3): warning: In file included from...
+./audio_controller.h(3): warning: In file included from...
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+projetinho_tecladinho.c(1): warning: In file included from...
+./lcd_controller.h(1): warning: In file included from...
+./general_controller.h(3): warning: In file included from...
+./audio_controller.h(4): warning: In file included from...
+./globals.h(19): warning: // comments are not allowed in this language [-Wcomment]
+//Context variables
+^
+./globals.h(20): warning: no previous extern declaration for non-static variable 'currentOctave' [-Wmissing-variable-declarations]
+int currentOctave = 4;
+    ^
+./globals.h(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int currentOctave = 4;
+^
+./globals.h(21): warning: no previous extern declaration for non-static variable 'currentCycle' [-Wmissing-variable-declarations]
+int currentCycle = 75;
+    ^
+./globals.h(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int currentCycle = 75;
+^
+./globals.h(22): warning: no previous extern declaration for non-static variable 'playList' [-Wmissing-variable-declarations]
+int playList[] = {1, 2, 3, 4};
+    ^
+./globals.h(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int playList[] = {1, 2, 3, 4};
+^
+./globals.h(23): warning: no previous extern declaration for non-static variable 'currentSong' [-Wmissing-variable-declarations]
+int currentSong = 1;
+    ^
+./globals.h(23): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int currentSong = 1;
+^
+./globals.h(24): warning: no previous extern declaration for non-static variable 'currentFrequencyMultiplier' [-Wmissing-variable-declarations]
+double currentFrequencyMultiplier = 1;
+       ^
+./globals.h(24): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+double currentFrequencyMultiplier = 1;
+^
+./globals.h(67): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+projetinho_tecladinho.c(1): warning: In file included from...
+./lcd_controller.h(1): warning: In file included from...
+./general_controller.h(3): warning: In file included from...
+./audio_controller.h(17): warning: // comments are not allowed in this language [-Wcomment]
+        ADC1->SQR3 = 9; //Channel 1 as input
+                        ^
+./audio_controller.h(19): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        double adcValue = ADC1->DR;
+               ^
+./audio_controller.h(63): warning: implicit conversion turns floating-point number into integer: 'double' to 'uint16_t' (aka 'unsigned short') [-Wfloat-conversion]
+                TIM3->PSC = getPSC(octave, note);
+                          ~ ^~~~~~~~~~~~~~~~~~~~
+./audio_controller.h(64): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                TIM3->CCR3 = currentCycle;
+                           ~ ^~~~~~~~~~~~
+./audio_controller.h(65): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                delay_ms(step);
+                ~~~~~~~~ ^~~~
+./audio_controller.h(193): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+projetinho_tecladinho.c(1): warning: In file included from...
+./lcd_controller.h(1): warning: In file included from...
+./general_controller.h(4): warning: In file included from...
+./lcd_controller.h(1): warning: In file included from...
+./general_controller.h(173): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+projetinho_tecladinho.c(1): warning: In file included from...
+./lcd_controller.h(1): warning: In file included from...
+./general_controller.h(4): warning: In file included from...
+./lcd_controller.h(6): warning: // comments are not allowed in this language [-Wcomment]
+void lcd_init (void); // Iniciar o display corretamente
+                      ^
+./lcd_controller.h(20): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        GPIOA->BSRR = (( aux & 0x0008 ) << 8) | (( aux & 0x0004 ) << 3) | (( aux & 0x0002 ) << 5) | (( aux & 0x0001 ) << 8);
+                    ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./lcd_controller.h(23): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->ODR &= ~ (1 << LCD_EN ); /* EN = 0 for H - to - L pulse */
+                   ~~ ^~~~~~~~~~~~~~~~
+./lcd_controller.h(28): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        GPIOA->BSRR = (( aux & 0x0008 ) << 8) | (( aux & 0x0004 ) << 3) | (( aux & 0x0002 ) << 5) | (( aux & 0x0001 ) << 8);
+                    ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./lcd_controller.h(31): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->ODR &= ~(1 << LCD_EN ); /* EN = 0 for H - to - L pulse */
+                   ~~ ^~~~~~~~~~~~~~~
+./lcd_controller.h(36): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->ODR &= ~ (1 << LCD_RS ); /* RS = 0 for command */
+                   ~~ ^~~~~~~~~~~~~~~~
+./lcd_controller.h(57): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->ODR &= ~(1 << 0 ); /* LCD_EN = 0 */
+                   ~~ ^~~~~~~~~~
+./lcd_controller.h(88): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+./lcd_controller.h(80): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        char secondLine[50];
+             ^
+projetinho_tecladinho.c(1): warning: In file included from...
+./lcd_controller.h(1): warning: In file included from...
+./general_controller.h(14): warning: // comments are not allowed in this language [-Wcomment]
+//Turns off LEDs, buzzer, etc
+^
+./general_controller.h(25): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM3->CCER = 0x0100;                            //Habilita buffer sa<ED>da + captura borda subida
+                                                                            ^
+./general_controller.h(173): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+projetinho_tecladinho.c(1): warning: In file included from...
+./lcd_controller.h(88): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+projetinho_tecladinho.c(4): warning: // comments are not allowed in this language [-Wcomment]
+        RCC->APB2ENR |= RCC_APB2ENR_AFIOEN; //Enable AFIO
+                                            ^
+projetinho_tecladinho.c(17): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                handleGPIO_A(GPIOA->IDR);
+                ~~~~~~~~~~~~ ~~~~~~~^~~
+projetinho_tecladinho.c(18): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                handleGPIO_B(GPIOB->IDR);
+                ~~~~~~~~~~~~ ~~~~~~~^~~
+projetinho_tecladinho.c(19): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                handleGPIO_C(GPIOC->IDR);
+                ~~~~~~~~~~~~ ~~~~~~~^~~
+projetinho_tecladinho.c(21): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+35 warnings generated.
+compiling projetinho_tecladinho.c...
+linking...
+Program Size: Code=13188 RO-data=944 RW-data=24 ZI-data=1632  
+".\Objects\Projeto.axf" - 0 Error(s), 54 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/andre/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+  C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:GPIO:1.3
+      Include file:  RTE_Driver/GPIO_STM32F10x.h
+      Source file:   RTE_Driver/GPIO_STM32F10x.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
