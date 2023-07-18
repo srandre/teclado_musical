@@ -101,7 +101,7 @@ void handleGPIO_B(uint16_t key) {
 				printHUD();
 				delay_ms(100);
 				break;
-			case 0x7FF8: { //SW4 -> PB15 -> Play random song
+			case 0x7FF8: { //SW4 -> PB15 -> Play current song
 				switch(currentSong) {
 					case 1:
 						playStarWars();
@@ -118,7 +118,7 @@ void handleGPIO_B(uint16_t key) {
 					default:
 						break;
 				}
-				//Cycles to next song
+				//Cycle to next song
 				if(currentSong == 4) {
 					currentSong = 1;
 				} else {

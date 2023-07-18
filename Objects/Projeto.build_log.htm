@@ -27,6 +27,7 @@ Project File Date:  07/14/2023
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
 RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
 C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
@@ -45,7 +46,6 @@ __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9}
     ^
 4 warnings generated.
 compiling system_stm32f10x.c...
-assembling startup_stm32f10x_md.s...
 C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
 C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
 C:/Users/andre/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
@@ -243,19 +243,19 @@ projetinho_tecladinho.c(1): warning: In file included from...
 ./lcd_controller.h(88): warning: no newline at end of file [-Wnewline-eof]
 #endif
       ^
-projetinho_tecladinho.c(4): warning: // comments are not allowed in this language [-Wcomment]
+projetinho_tecladinho.c(6): warning: // comments are not allowed in this language [-Wcomment]
         RCC->APB2ENR |= RCC_APB2ENR_AFIOEN; //Enable AFIO
                                             ^
-projetinho_tecladinho.c(17): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+projetinho_tecladinho.c(19): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
                 handleGPIO_A(GPIOA->IDR);
                 ~~~~~~~~~~~~ ~~~~~~~^~~
-projetinho_tecladinho.c(18): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+projetinho_tecladinho.c(20): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
                 handleGPIO_B(GPIOB->IDR);
                 ~~~~~~~~~~~~ ~~~~~~~^~~
-projetinho_tecladinho.c(19): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+projetinho_tecladinho.c(21): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
                 handleGPIO_C(GPIOC->IDR);
                 ~~~~~~~~~~~~ ~~~~~~~^~~
-projetinho_tecladinho.c(21): warning: no newline at end of file [-Wnewline-eof]
+projetinho_tecladinho.c(23): warning: no newline at end of file [-Wnewline-eof]
 }
  ^
 35 warnings generated.
@@ -299,7 +299,7 @@ Package Vendor: Keil
       Source file:   Device/Source/ARM/STM32F1xx_OPT.s
       Include file:  RTE_Driver/Config/RTE_Device.h
       Source file:   Device/Source/ARM/startup_stm32f10x_md.s
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
