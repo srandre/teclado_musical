@@ -63,8 +63,8 @@ void play (int octave, enum notes note, uint16_t duration_ms) {
 		TIM3->PSC = getPSC(octave, note);
 		TIM3->CCR3 = currentCycle;
 		delay_ms(step);
-		TIM3->CCR3 = 0;
 	}
+	TIM3->CCR3 = 0;
 }
 
 void playStarWars(void) {

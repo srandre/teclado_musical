@@ -3,11 +3,11 @@
 <title>Static Call Graph - [.\Objects\Projeto.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Projeto.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Mon Jul 17 20:53:12 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Mon Jul 17 22:07:45 2023
 <BR><P>
-<H3>Maximum Stack Usage =        328 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        324 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-__rt_entry_main &rArr; main &rArr; handleGPIO_B &rArr; playIndianaJones &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
+_printf_f &rArr; _printf_fp_dec &rArr; _printf_fp_dec_real &rArr; _fp_digits &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 <P>
 <H3>
 Functions with no stack information
@@ -374,7 +374,7 @@ Global Symbols
 <P><STRONG><a name="[e2]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[69]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 328 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 320 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; handleGPIO_B &rArr; playIndianaJones &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -1026,7 +1026,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[9a]"></a>handleGPIO_A</STRONG> (Thumb, 120 bytes, Stack size 16 bytes, projetinho_tecladinho.o(.text.handleGPIO_A))
-<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = handleGPIO_A &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = handleGPIO_A &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearOutput
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play
@@ -1035,7 +1035,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[9d]"></a>handleGPIO_B</STRONG> (Thumb, 622 bytes, Stack size 24 bytes, projetinho_tecladinho.o(.text.handleGPIO_B))
-<BR><BR>[Stack]<UL><LI>Max Depth = 312 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 304 + Unknown Stack Size
 <LI>Call Chain = handleGPIO_B &rArr; playIndianaJones &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearOutput
@@ -1051,7 +1051,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a4]"></a>handleGPIO_C</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, projetinho_tecladinho.o(.text.handleGPIO_C))
-<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = handleGPIO_C &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = handleGPIO_C &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearOutput
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play
@@ -1120,7 +1120,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[6a]"></a>main</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, projetinho_tecladinho.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 328 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 320 + Unknown Stack Size
 <LI>Call Chain = main &rArr; handleGPIO_B &rArr; playIndianaJones &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handleGPIO_C
@@ -1136,8 +1136,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[9b]"></a>play</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, projetinho_tecladinho.o(.text.play))
-<BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = play &rArr; getPSC &rArr; __aeabi_dmul
+<P><STRONG><a name="[9b]"></a>play</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, projetinho_tecladinho.o(.text.play))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getPSC
@@ -1154,7 +1154,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a1]"></a>playIndianaJones</STRONG> (Thumb, 268 bytes, Stack size 64 bytes, projetinho_tecladinho.o(.text.playIndianaJones))
-<BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = playIndianaJones &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
+<BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = playIndianaJones &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
@@ -1163,7 +1163,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a3]"></a>playJojo</STRONG> (Thumb, 346 bytes, Stack size 32 bytes, projetinho_tecladinho.o(.text.playJojo))
-<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = playJojo &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = playJojo &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
@@ -1172,7 +1172,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a2]"></a>playRickAstley</STRONG> (Thumb, 428 bytes, Stack size 56 bytes, projetinho_tecladinho.o(.text.playRickAstley))
-<BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = playRickAstley &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
+<BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = playRickAstley &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
@@ -1181,7 +1181,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a0]"></a>playStarWars</STRONG> (Thumb, 232 bytes, Stack size 48 bytes, projetinho_tecladinho.o(.text.playStarWars))
-<BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = playStarWars &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = playStarWars &rArr; play &rArr; getPSC &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play
 </UL>
